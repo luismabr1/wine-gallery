@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .mobile-highlight {
+    @apply scale-105 bg-opacity-100 z-10;
+  }
+}
+
+@media (max-width: 640px) {
+  .wine-bottle:not(.mobile-highlight) {
+    @apply opacity-50 scale-95;
+  }
+}
+
